@@ -5,29 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>Reports</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Plotratio</title>
+  <meta content="information,property,land,detail,list,units,size,condos,laravel,lease,area,tenure" name="keywords">
+  <meta name="description" content="plotratio.co Written by Reema Patel,Designed by Reema patel,Profession web developer,
+  responsive,mobile view, About information of land , property">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{url('/public')}}/assets/img/icon.jpeg" rel="icon">
+  <link href="{{url('/public')}}/assets/img/icon.jpeg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/vendor/aos/aos.css" rel="stylesheet">
 
-
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{url('/public')}}/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: FlexStart - v1.9.0
@@ -36,86 +36,142 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-  /* reportListButton */
+    .header{
+      box-shadow: 0px 0px 35px 20px rgb(0 0 0 / 29%);
+    }
+    body .marginRowClass > .btn-group {
+      /* transition: all 2s, box-shadow .1s; */
+      /* background-image: linear-gradient(to bottom, #F9DC5C 0%, #F9DC5C 100%); */
+      box-shadow: 0px 10px 10px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 4%);
+      border: 2px solid #465362!important;
+    }
+
+    body .marginRowClass > .btn-group:hover *{
+        background-color:#F9DC5C!important;
+    }
+
     .reportListButton{
       width:100%!important;
-      height: 4rem;
-
+      height: 100%!important;
+      border-left: 1px solid #465362;
       padding: 0px 9px!important;
       background-color: #FFFFFF;
       color: #000000;
       font-size: 12px!important;
       text-align: left!important;
       border: 0px;
+      display: block;
+      align-self: center;
     }
-    .marginRowClass{
+    /* .marginRowClass{
       margin-bottom:1%!important;
       margin-top:1%!important;
-      margin-right:3%!important;
-    }
+      margin-right:1%!important;
+      margin-left:1%!important;
+    } */
+
     .marginRowClass > .btn-group{
       border-radius: 5px;
-      border: 2px solid black;
+      border: 2px solid #465362;
       padding:0px;
     }
-    .reportListButton:hover{
-      background-color: #b02e0c!important;
-      color:#FFFFFF!important;
+
+
+    .reportListButton:hover + .marginRowClass .btn-group{
+      background-color: #F9DC5C!important;
     }
+
+    .reportListButton:hover{
+      background-color: #F9DC5C!important;
+      color: #011936;
+      font-weight: bold;
+    }
+
+    .row> .about{
+      padding: 85px 0!important;
+    }
+
     .header,.navbar a,.header.header-scrolled{
-      background-color: #b02e0c;
+      background-color: #041b34;
       color:#FFFFFF!important;
     }
     [data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos]  {
         transition-duration: 500ms!important;
       }
 
-      @media (max-width: 577px) {
+      @media (max-width: 576px) {
         .reportListButton {
-          height: 3.18rem;
+          /* height: 3.5rem!important; */
         }
         .btn-group >span img{
-          width: 76px;
-          height: 144px;
+          width: 55%!important;
+          height: 75%!important;
         }
         .mySpanPaddingClass {
-          padding: 1% 3%!important;
+          padding: 0% 1%!important;
         }
+        #mySpanPaddingClass,#mySpanPaddingClass1,#mySpanPaddingClass2,#mySpanPaddingClass3,#mySpanPaddingClass4,#mySpanPaddingClass5{
+          margin:2%!important;
+          padding: 2%;
+        }
+        .container{
+          padding-right: var(--bs-gutter-x,.75rem)!important;
+          padding-left: var(--bs-gutter-x,.75rem)!important;
+        }
+        .textFooter,.textFooter:hover{
+          float: none!important;
+        }
+        .row > *{
+          padding:0%;
+          margin:0%;
+          /* display: block!important; */
+        }
+        .container > .row{
+          margin:0%!important;
+        }
+
       }
       @media (max-width: 770px) {
         .reportListButton {
-          height: 7rem;
+          height: 7.7rem;
           padding: 0px 5px;
         }
         .btn-group >span img{
-          width: 35px;
-          height: 93px;
+          width: 100%;
+          height: 100%;
         }
         .mySpanPaddingClass{
-          padding: 8% 3%;
-          background-color: #b02e0c;
+          padding: 0% 0%;
+          /* background-color: #FFFFFF; */
+        }
+        .mySpanPaddingClass > img{
+          /* margin-top: 13px; */
+        }
+        .container{
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+
+        .container > .row{
+          margin-bottom: 4%;
         }
       }
       @media (min-width: 771px) {
         .reportListButton {
-          height: 4.1rem;
+          height: 4.4rem;
           padding: 0px 9px;
         }
         .btn-group >span img{
-          width: 35px;
-          height: 45px;
+          width: 80%;
+          height: 100%;
         }
         .mySpanPaddingClass{
-          padding: 4% 3%!important;
-          background-color: #b02e0c;
+          padding: 2% 0%!important;
+          /* background-color: #FFFFFF; */
         }
       }
-      .btn-group >span img{
-        /* width: 60px;
-        height: 64px; */
-      }
 
-      .marginRowClass > .btn img {
+      /* .marginRowClass > .btn img {
         display: inline-block;
         vertical-align: middle;
         background: #f00;
@@ -123,13 +179,50 @@
         border-radius: 5px;
 
     }
-      .marginRowClass > .btn {
+    .marginRowClass > .btn {
         border: 1px solid black!important;
-
-    }
+    } */
     .mySpanPaddingClass{
-      padding: 8% 3%;
-      background-color: #b02e0c;
+      padding: 0% 0%;
+      /* background-color: #FFFFFF; */
+      align-self: center;
+      display: flex;
+    }
+
+    .btn-group{
+      display: flex!important;
+    }
+
+    .row > *{
+      display: grid;
+    }
+
+    .container > .row {
+      margin-top: 2%;
+      margin-bottom: 3%;
+    }
+    #mySpanPaddingClass,#mySpanPaddingClass1,#mySpanPaddingClass2,#mySpanPaddingClass3,#mySpanPaddingClass4,#mySpanPaddingClass5{
+      border: 1.5px solid black;
+      border-radius: 3px;
+    }
+    .textFooterColor{
+      color:#465362!important;
+      text-align: center!important;
+      padding-left: 13%;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding: 0 0 0px 0!important;
+    }
+
+    .textFooter,.textFooter:hover{
+      font-size:12px;
+      color:lightgrey;
+      float: right;
     }
 
     </style>
@@ -141,37 +234,16 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.jpeg" alt="">
+      <a href="#" class="logo d-flex align-items-center" target="_blank">
+        <img src="{{url('/public')}}/assets/img/plotratio_logo.gif" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <!-- <li><a class="nav-link scrollto" href="/">Home</a></li> -->
           <li><a class="nav-link scrollto active" href="{{ route('/') }}">Reports</a></li>
-          <li><a class="nav-link scrollto" href="{{ url('report-list/button-1') }}">Report Detail</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">RED Paper</a></li>
           <li><a class="nav-link scrollto" href="#team">ReFX</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="about">Get Started</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -180,18 +252,6 @@
   </header><!-- End Header -->
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <!-- <section class="breadcrumbs">
-      <div class="container">
-
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Reports</li>
-        </ol>
-      </div>
-    </section><!-- End Breadcrumbs --> -->
-
     <!-- ======= Portfolio Section ======= -->
 
     <div class="container">
@@ -199,69 +259,78 @@
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
 
-        <div class="container" data-aos="fade-up">
-          <div class="row col-sm-12 col-md-12 col-lg-12 marginRowClass">
-           <div class="col-sm-1 col-md-1 col-lg-1"></div>
-              <div class="col-sm-3 col-md-3 col-lg-3 marginRowClass btn-group">
-
-                  <span class="mySpanPaddingClass">
-                    <img src="assets/img/icons/logo1.png" alt="Avatar" class="image" >
-                  </span>
-                  <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-1") }}'">
-                    <span>Top 10 Massive Condos By Number Of Units</span>
+        <div class="container" >
+          <div class="row col-sm-12 col-md-12 col-lg-12">
+           <!-- <div class="col-sm-1 col-md-1 col-lg-1"></div> -->
+             <div class="col-sm-4 col-md-4 col-lg-4  ">
+               <div id="mySpanPaddingClass" class="marginRowClass btn-group">
+                 <span class="mySpanPaddingClass" >
+                   <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                 </span>
+                 <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-4") }}'" onmouseover="chbg('mySpanPaddingClass','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass','#FFFFFF')">
+                   <span>Top 10 Latest Private Properties</span>
+                 </button>
+               </div>
+             </div>
+             <div class="col-sm-4 col-md-4 col-lg-4  ">
+               <div id="mySpanPaddingClass1" class="marginRowClass btn-group">
+                 <span class="mySpanPaddingClass" >
+                   <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                 </span>
+                 <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-5") }}'" onmouseover="chbg('mySpanPaddingClass1','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass1','#FFFFFF')">
+                   <span>Top 10 Oldest Private Properties</span>
+                 </button>
+               </div>
+             </div>
+             <div class="col-sm-4 col-md-4 col-lg-4  ">
+               <div id="mySpanPaddingClass2" class="marginRowClass btn-group">
+                 <span class="mySpanPaddingClass" >
+                   <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                 </span>
+                  <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-1") }}'" onmouseover="chbg('mySpanPaddingClass2','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass2','#FFFFFF')">
+                    <span>Top 10 Massive Private Properties By Number Of Units</span>
                   </button>
+                </div>
               </div>
-              <div class="col-sm-3 col-md-3 col-lg-3 marginRowClass btn-group">
-                <span class="mySpanPaddingClass">
-                  <img src="assets/img/logo.png" alt="Avatar" class="image" >
-                </span>
-                <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-2") }}'">
-                  <span>Top 10 Smallest Condos By Land Size</span>
-                </button>
-              </div>
-              <div class="col-sm-3 col-md-3 col-lg-3 marginRowClass btn-group">
-              <span class="mySpanPaddingClass">
-                <img src="assets/img/logo.png" alt="Avatar" class="image" >
-              </span>
-              <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-3") }}'">
-                <span>Top 10 Massive Condos By Land Size</span>
-              </button>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <!-- <div class="col-sm-1 col-md-1 col-lg-1"></div> -->
           </div>
-          <div class="row col-sm-12 col-md-12 col-lg-12 marginRowClass">
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-              <div class="col-sm-3 col-md-3 col-lg-3 marginRowClass btn-group">
-                <span class="mySpanPaddingClass">
-                  <img src="assets/img/logo.png" alt="Avatar" class="image" >
+          <div class="row col-sm-12 col-md-12 col-lg-12">
+            <!-- <div class="col-sm-1 col-md-1 col-lg-1"></div> -->
+            <div class="col-sm-4 col-md-4 col-lg-4  ">
+              <div id="mySpanPaddingClass3" class="btn-group">
+                <span class="mySpanPaddingClass" >
+                  <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                 </span>
-                <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-3") }}'">
-                  <span>Top 10 Latest Condos</span>
+                <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-6") }}'" onmouseover="chbg('mySpanPaddingClass3','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass3','#FFFFFF')">
+                  <span>Top 10 Smallest Private Properties By Number Of Units</span>
                 </button>
               </div>
-              <div class="col-sm-3 col-md-3 col-lg-3 marginRowClass btn-group">
-                <span class="mySpanPaddingClass">
-                  <img src="assets/img/logo.png" alt="Avatar" class="image" >
-                </span>
-                <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-5") }}'">
-                  <span>Top 10 Oldest Condos</span>
-                </button>
-              </div>
-              <div class="col-sm-3 col-md-3 col-lg-3 marginRowClass btn-group">
-              <span class="mySpanPaddingClass">
-                <img src="assets/img/logo.png" alt="Avatar" class="image" >
-              </span >
-              <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-6") }}'">
-                <span>Top 10 Smallest Condos By Number Of Units</span>
-              </button>
             </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-sm-4 col-md-4 col-lg-4  ">
+              <div id="mySpanPaddingClass4" class="btn-group">
+                <span class="mySpanPaddingClass" >
+                  <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                </span>
+                <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-3") }}'" onmouseover="chbg('mySpanPaddingClass4','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass4','#FFFFFF')">
+                  <span>Top 10 Massive Private Properties By Land Size</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4  ">
+              <div id="mySpanPaddingClass5" class="btn-group">
+                <span class="mySpanPaddingClass" >
+                  <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                </span>
+                <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-2") }}'" onmouseover="chbg('mySpanPaddingClass5','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass5','#FFFFFF')">
+                  <span>Top 10 Smallest Private properties By Land Size</span>
+                </button>
+              </div>
+            </div>
+            <!-- <div class="col-sm-1 col-md-1 col-lg-1"></div> -->
           </div>
       </section><!-- End About Section -->
 
   </div>
-
-
 
 </div>
 <!-- /.container -->
@@ -269,108 +338,40 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 text-center">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.jpeg" alt="">
-              <!-- <span>FlexStart</span> -->
-            </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
+    <div class=" container col-12">
       <div class="copyright">
-        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+        <span class="textFooterColor">&copy; 2008 to {{date("Y")}} <strong><span>Plotratio.co</span></strong></span>
+        <span class="textFooter">
+          <a class="textFooter" href="https://icons8.com/" target="_blank">
+                 <u>Icons8 LLC</u>
+          </a>
+        </span>
       </div>
+
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
+    <!-- Vendor JS Files -->
+    <script src="{{url('/public')}}/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="{{url('/public')}}/assets/vendor/aos/aos.js"></script>
+    <script src="{{url('/public')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url('/public')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="{{url('/public')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{url('/public')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{url('/public')}}/assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="{{url('/public')}}/assets/js/main.js"></script>
+    <script type="text/javascript">
+    function chbg(id,color) {
+      document.getElementById(id).style.backgroundColor = color;
+    }
+    </script>
 </body>
-
 </html>

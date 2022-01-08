@@ -8,12 +8,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap');
+
+
 :root {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Epilogue', sans-serif !important;
   color: #444444;
 }
 
@@ -35,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   overflow: hidden;
 }
 
@@ -286,7 +290,7 @@ section {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #012970;
+  color: #FFFFFF; /**#012970*/
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -324,9 +328,9 @@ section {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: initial;
+  top: 55px;
   right: 15px;
-  bottom: initial;
+  /* bottom: 15px; */
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
@@ -2034,3 +2038,11 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+body .marginRowClass > .btn-group{border:3px solid #465362;border-radius:4px;}
+h1, h2, h3, h4, h5, h6{font-family: 'Epilogue', sans-serif;}
+h4 strong{font-weight:500;font-size:40px;text-transform: lowercase;}
+h4{line-height: 1;margin: 0px;}
+h6{color: #666;}
+body .backButton{background-color:rgba(4,27,52,1);color: #fff;line-height: 1;padding-top: 11px;padding-bottom: 10px;}
+body .backButton:hover{color: #fff;background-color:rgba(4,27,52,0.7);}

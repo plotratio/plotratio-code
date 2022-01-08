@@ -13,7 +13,7 @@ class ReportController extends Controller {
     $reportObject = new Report();
     $data = $reportObject->getLatestReportData($id);
     if(count(json_decode($data))!=0){
-      return view('reports-detail')->with('data',json_decode($data));
+      return view('reports-detail')->with('data',json_decode($data))->with('buttonId',$id);
     }
   }
 }

@@ -11,25 +11,25 @@
   responsive,mobile view, About information of land , property">
 
   <!-- Favicons -->
-  <link href="{{url('/public')}}/assets/img/icon.jpeg" rel="icon">
-  <link href="{{url('/public')}}/assets/img/icon.jpeg" rel="apple-touch-icon">
+  <link href="{{url('')}}/assets/img/icon.jpeg" rel="icon">
+  <link href="{{url('')}}/assets/img/icon.jpeg" rel="apple-touch-icon">
 
   <link rel="stylesheet" href="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <!-- Google Fonts -->
-  <link href="{{url('/public')}}/assets/css/google-font.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/css/google-font.css" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{url('/public')}}/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <link href="{{url('/public')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{url('/public')}}/assets/css/style.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: FlexStart - v1.9.0
@@ -231,7 +231,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="#" class="logo d-flex align-items-center" target="_blank">
-        <img src="{{url('/public')}}/assets/img/plotratio_logo.gif" alt="">
+        <img src="{{url('')}}/assets/img/plotratio_logo.gif" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -469,16 +469,16 @@
   <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
 
   <!-- Vendor JS Files -->
-  <script src="{{url('/public')}}/assets/vendor/purecounter/purecounter.js"></script>
-  <script src="{{url('/public')}}/assets/vendor/aos/aos.js"></script>
-  <script src="{{url('/public')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="{{url('/public')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="{{url('/public')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="{{url('/public')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="{{url('/public')}}/assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{url('')}}/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="{{url('')}}/assets/vendor/aos/aos.js"></script>
+  <script src="{{url('')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{{url('')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="{{url('')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="{{url('')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="{{url('')}}/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{url('/public')}}/assets/js/main.js"></script>
+  <script src="{{url('')}}/assets/js/main.js"></script>
 </body>
 
 </html>

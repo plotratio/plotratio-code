@@ -11,23 +11,23 @@
   responsive,mobile view, About information of land , property">
 
   <!-- Favicons -->
-  <link href="{{url('/public')}}/assets/img/icon.jpeg" rel="icon">
-  <link href="{{url('/public')}}/assets/img/icon.jpeg" rel="apple-touch-icon">
+  <link href="{{url('')}}/assets/img/icon.jpeg" rel="icon">
+  <link href="{{url('')}}/assets/img/icon.jpeg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
 <!-- Vendor CSS Files -->
-  <link href="{{url('/public')}}/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <link href="{{url('/public')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="{{url('/public')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{url('/public')}}/assets/css/style.css" rel="stylesheet">
+  <link href="{{url('')}}/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: FlexStart - v1.9.0
@@ -235,7 +235,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="#" class="logo d-flex align-items-center" target="_blank">
-        <img src="{{url('/public')}}/assets/img/plotratio_logo.gif" alt="">
+        <img src="{{url('')}}/assets/img/plotratio_logo.gif" alt="">
       </a>
 
       <nav id="navbar" class="navbar">
@@ -265,7 +265,7 @@
              <div class="col-sm-4 col-md-4 col-lg-4  ">
                <div id="mySpanPaddingClass" class="marginRowClass btn-group">
                  <span class="mySpanPaddingClass" >
-                   <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                   <img src="{{url('')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                  </span>
                  <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-4") }}'" onmouseover="chbg('mySpanPaddingClass','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass','#FFFFFF')">
                    <span>Top 10 Latest Private Properties</span>
@@ -275,7 +275,7 @@
              <div class="col-sm-4 col-md-4 col-lg-4  ">
                <div id="mySpanPaddingClass1" class="marginRowClass btn-group">
                  <span class="mySpanPaddingClass" >
-                   <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                   <img src="{{url('')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                  </span>
                  <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-5") }}'" onmouseover="chbg('mySpanPaddingClass1','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass1','#FFFFFF')">
                    <span>Top 10 Oldest Private Properties</span>
@@ -285,7 +285,7 @@
              <div class="col-sm-4 col-md-4 col-lg-4  ">
                <div id="mySpanPaddingClass2" class="marginRowClass btn-group">
                  <span class="mySpanPaddingClass" >
-                   <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                   <img src="{{url('')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                  </span>
                   <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-1") }}'" onmouseover="chbg('mySpanPaddingClass2','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass2','#FFFFFF')">
                     <span>Top 10 Massive Private Properties By Number Of Units</span>
@@ -299,7 +299,7 @@
             <div class="col-sm-4 col-md-4 col-lg-4  ">
               <div id="mySpanPaddingClass3" class="btn-group">
                 <span class="mySpanPaddingClass" >
-                  <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                  <img src="{{url('')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                 </span>
                 <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-6") }}'" onmouseover="chbg('mySpanPaddingClass3','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass3','#FFFFFF')">
                   <span>Top 10 Smallest Private Properties By Number Of Units</span>
@@ -309,7 +309,7 @@
             <div class="col-sm-4 col-md-4 col-lg-4  ">
               <div id="mySpanPaddingClass4" class="btn-group">
                 <span class="mySpanPaddingClass" >
-                  <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                  <img src="{{url('')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                 </span>
                 <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-3") }}'" onmouseover="chbg('mySpanPaddingClass4','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass4','#FFFFFF')">
                   <span>Top 10 Massive Private Properties By Land Size</span>
@@ -319,7 +319,7 @@
             <div class="col-sm-4 col-md-4 col-lg-4  ">
               <div id="mySpanPaddingClass5" class="btn-group">
                 <span class="mySpanPaddingClass" >
-                  <img src="{{url('/public')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
+                  <img src="{{url('')}}/assets/img/icons/common_icon.png" alt="Avatar" class="image"/>
                 </span>
                 <button type="button" class="reportListButton" onclick="window.location='{{ url("report-list/button-2") }}'" onmouseover="chbg('mySpanPaddingClass5','#F9DC5C')" onmouseout="chbg('mySpanPaddingClass5','#FFFFFF')">
                   <span>Top 10 Smallest Private properties By Land Size</span>
@@ -358,16 +358,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
     <!-- Vendor JS Files -->
-    <script src="{{url('/public')}}/assets/vendor/purecounter/purecounter.js"></script>
-    <script src="{{url('/public')}}/assets/vendor/aos/aos.js"></script>
-    <script src="{{url('/public')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="{{url('/public')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="{{url('/public')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="{{url('/public')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="{{url('/public')}}/assets/vendor/php-email-form/validate.js"></script>
+    <script src="{{url('')}}/assets/vendor/purecounter/purecounter.js"></script>
+    <script src="{{url('')}}/assets/vendor/aos/aos.js"></script>
+    <script src="{{url('')}}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url('')}}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="{{url('')}}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{url('')}}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{url('')}}/assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{url('/public')}}/assets/js/main.js"></script>
+    <script src="{{url('')}}/assets/js/main.js"></script>
     <script type="text/javascript">
     function chbg(id,color) {
       document.getElementById(id).style.backgroundColor = color;
